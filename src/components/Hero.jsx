@@ -71,7 +71,7 @@ export function Hero() {
         <div className="hero-avatar-wrapper">
           {/* Background Decorative Layer 1: Pink Circle */}
           <div className="avatar-layer avatar-layer--pink-circle" aria-hidden="true" />
-          
+
           {/* Background Decorative Layer 2: Yellow Offset Box */}
           <div className="avatar-layer avatar-layer--yellow-box" aria-hidden="true" />
 
@@ -123,7 +123,7 @@ export function Hero() {
               <div className="avatar-flip-face avatar-flip-back">
                 <div className="avatar-qr-content">
                   <span className="avatar-qr-title mono-label">SCAN MY CV</span>
-                  
+
                   <div className="avatar-qr-box">
                     <img
                       src="/assets/cv-qr.svg"
@@ -136,7 +136,7 @@ export function Hero() {
 
                   <a
                     href={profileData.cvPath}
-                    download="CV_MOHAMMAD_AZHRIEL.pdf"
+                    download="CV_MOHAMMAD_AZHRIEL_MUARI_F.pdf"
                     className="avatar-qr-download-link mono-label"
                     onClick={(e) => e.stopPropagation()}
                     aria-label="Unduh berkas CV format PDF"

@@ -24,6 +24,6 @@ export const profileData = {
     { label: "Fokus & Minat", value: "Web Development, UI/UX Design, Videografi" },
     { label: "Kemahiran Bahasa", value: "Bahasa Indonesia (Native), English (Conversational)" }
   ],
-  cvPath: "/files/CV_MOHAMMAD AZHRIEL.pdf"
+  cvPath: "/files/CV_MOHAMMAD_AZHRIEL_MUARI_F.pdf"
 };
 

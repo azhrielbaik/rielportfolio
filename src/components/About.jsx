@@ -80,7 +80,7 @@ export function About() {
               <Button
                 as="a"
                 href={profileData.cvPath}
-                download="CV_MOHAMMAD_AZHRIEL.pdf"
+                download="CV_MOHAMMAD_AZHRIEL_MUARI_F.pdf"
                 variant="primary"
                 className="btn-download-cv"
                 aria-label="Download berkas Curriculum Vitae resmi format PDF"
