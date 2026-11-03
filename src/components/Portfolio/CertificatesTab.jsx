@@ -49,6 +49,7 @@ export function CertificatesTab() {
                   width="600"
                   height="420"
                   loading="lazy"
+                  decoding="async"
                   className="polaroid__img"
                 />
                 <span className="polaroid__badge mono-label">

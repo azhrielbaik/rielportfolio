@@ -34,6 +34,7 @@ export function Footer() {
                   width="300"
                   height="300"
                   loading="lazy"
+                  decoding="async"
                   className="instagram-tile__img"
                 />
 

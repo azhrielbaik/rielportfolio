@@ -66,6 +66,7 @@ function ProjectCardItem({ project, index, isEven, tilt }) {
           width="640"
           height="400"
           loading="lazy"
+          decoding="async"
           className="project-card__img"
         />
         <span className="project-card__category-badge mono-label">

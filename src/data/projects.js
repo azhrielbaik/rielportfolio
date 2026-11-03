@@ -9,7 +9,7 @@ export const projectsData = [
     tagColors: ["yellow", "pink", "blue", "mint", "lilac"],
     github: "https://github.com/azhrielbaik",
     demo: "https://github.com/azhrielbaik",
-    image: "/assets/projects/delimacare.jpg",
+    image: "/assets/projects/delimacare.webp",
     featured: true
   },
   {
@@ -36,7 +36,7 @@ export const projectsData = [
     github: null,
     figma: "https://www.figma.com",
     demo: "https://www.figma.com/design/Y6W6IUpBUtXLp9YlnCL62N/Synapse?node-id=0-1&t=rCax8NH7rQGUcPbF-1",
-    image: "/assets/projects/synapse.jpg",
+    image: "/assets/projects/synapse.webp",
     featured: true
   },
   {
@@ -49,7 +49,7 @@ export const projectsData = [
     tagColors: ["blue", "mint", "yellow", "pink", "lilac"],
     github: "https://github.com/azhrielbaik/dingin.in",
     demo: "https://github.com/azhrielbaik/dingin.in",
-    image: "/assets/projects/frozenfood.jpg",
+    image: "/assets/projects/frozenfood.webp",
     featured: false
   },
   {
@@ -88,7 +88,7 @@ export const projectsData = [
     tagColors: ["yellow", "lilac", "pink", "mint", "blue"],
     github: "https://github.com/azhrielbaik",
     demo: "https://www.blyvo.my.id/",
-    image: "/assets/projects/webagency.jpg",
+    image: "/assets/projects/webagency.webp",
     featured: false
   }
 ];

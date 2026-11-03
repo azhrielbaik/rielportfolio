@@ -7,7 +7,7 @@ export const certificatesData = [
     category: "UI/UX Competition",
     description:
       "Penghargaan Juara Harapan 1 pada kompetisi Desain UI/UX tingkat mahasiswa yang diselenggarakan oleh Politeknik Manufaktur Bandung. Menilai kemampuan riset pengguna, pemecahan masalah antarmuka, dan konsistensi sistem desain visual.",
-    image: "/assets/certificates/cert-uiux-polman.jpg",
+    image: "/assets/certificates/cert-uiux-polman.webp",
     badge: "🏆 Juara Harapan 1",
     tilt: "var(--tilt-a)"
   },
@@ -19,7 +19,7 @@ export const certificatesData = [
     category: "Videografi & Media Kreatif",
     description:
       "Penghargaan Juara Harapan 1 dalam lomba produksi video kreatif dokumenter kesejarahan. Menguji keahlian storytelling visual, sinematografi, editing ritmis, dan penyusunan pesan edukatif yang memikat.",
-    image: "/assets/certificates/cert-videografi.jpg",
+    image: "/assets/certificates/cert-videografi.webp",
     badge: "🎬 Juara Harapan 1",
     tilt: "var(--tilt-b)"
   },
@@ -31,7 +31,7 @@ export const certificatesData = [
     category: "Videografi & Vlog Kesejarahan",
     description:
       "Sertifikat apresiasi dan penghargaan sebagai Peserta Kategori Umum Lomba Vlog Kesejarahan Lokal Kabupaten Subang Tahun 2025 yang diselenggarakan oleh Bidang Kebudayaan Dinas Pendidikan dan Kebudayaan.",
-    image: "/assets/certificates/cert-peserta.jpg",
+    image: "/assets/certificates/cert-peserta.webp",
     badge: "🎖 Peserta Terpilih",
     tilt: "var(--tilt-c)"
   }

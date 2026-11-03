@@ -1,0 +1,178 @@
+/* Draggable Neo-Brutalist Stickers Styles */
+
+.draggable-stickers-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+  overflow: visible;
+}
+
+.draggable-sticker {
+  position: absolute;
+  pointer-events: auto;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border: 2.5px solid var(--ink);
+  border-radius: var(--r-sm);
+  box-shadow: 4px 4px 0 var(--ink);
+  will-change: transform;
+  transition: box-shadow var(--dur-fast) var(--ease-spring);
+}
+
+.draggable-sticker:hover {
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.draggable-sticker.is-dragging {
+  cursor: grabbing !important;
+  box-shadow: 9px 9px 0 var(--ink) !important;
+  transition: none !important;
+  filter: brightness(1.04);
+}
+
+/* Sticker Color Variants */
+.sticker--yellow {
+  background-color: var(--yellow);
+  color: var(--ink);
+}
+
+.sticker--pink {
+  background-color: var(--pink);
+  color: var(--ink);
+}
+
+.sticker--mint {
+  background-color: var(--mint);
+  color: var(--ink);
+}
+
+.sticker--white {
+  background-color: var(--white);
+  color: var(--ink);
+}
+
+/* Semi-transparent Masking Tape Effect on top */
+.sticker__tape {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px dashed rgba(17, 17, 17, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+.sticker__inner {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  pointer-events: none;
+}
+
+.sticker__emoji {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.sticker__text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.sticker__badge {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.sticker__subtext {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: rgba(17, 17, 17, 0.75);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Grab Status Pill */
+.sticker__grab-pill {
+  position: absolute;
+  bottom: -11px;
+  right: 6px;
+  background-color: var(--ink);
+  color: var(--yellow);
+  font-size: 0.58rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: var(--r-pill);
+  opacity: 0;
+  transform: translateY(3px);
+  transition: all var(--dur-fast) var(--ease-spring);
+  pointer-events: none;
+  box-shadow: 1.5px 1.5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.draggable-sticker:hover .sticker__grab-pill,
+.draggable-sticker.is-dragging .sticker__grab-pill {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initial Desktop Coordinates */
+.sticker-pos-1 {
+  top: 10%;
+  right: 4%;
+}
+
+.sticker-pos-2 {
+  top: 56%;
+  right: 2%;
+}
+
+.sticker-pos-3 {
+  bottom: 8%;
+  left: 45%;
+}
+
+.sticker-pos-4 {
+  top: 8%;
+  left: 1%;
+}
+
+/* Tablet & Mobile Layout */
+@media (max-width: 900px) {
+  .sticker-pos-1 {
+    top: 3%;
+    right: 4%;
+  }
+  .sticker-pos-2 {
+    top: 58%;
+    right: 3%;
+  }
+  .sticker-pos-3 {
+    bottom: 5%;
+    left: 8%;
+  }
+  .sticker-pos-4 {
+    top: 2%;
+    left: 2%;
+  }
+  .draggable-sticker {
+    padding: 0.35rem 0.65rem;
+  }
+  .sticker__badge {
+    font-size: 0.7rem;
+  }
+}
+

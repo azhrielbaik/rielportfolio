@@ -4,7 +4,8 @@ import { Button } from "./ui/Button";
 import { Chip } from "./ui/Chip";
 import { Icon } from "./ui/Icon";
 import { Marquee } from "./ui/Marquee";
-import avatarImg from "../assets/azhriel.jpg";
+import { DraggableStickers } from "./ui/DraggableStickers";
+import avatarImg from "../assets/azhriel.webp";
 import "./Hero.css";
 
 export function Hero() {
@@ -16,6 +17,9 @@ export function Hero() {
 
   return (
     <section id="home" className="hero-section">
+      {/* Draggable Neo-Brutalist Interactive Stickers Playground */}
+      <DraggableStickers />
+
       <div className="container hero-container">
         {/* Left Column (7 parts on desktop) */}
         <div className="hero-content">
@@ -116,6 +120,7 @@ export function Hero() {
                   height="360"
                   className="avatar-image"
                   loading="eager"
+                  fetchPriority="high"
                 />
               </div>
 
