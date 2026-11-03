@@ -1,0 +1,73 @@
+:root {
+  /* Color Tokens */
+  --ink: #111111;
+  --paper: #FFF6DC;
+  --paper-2: #FFEFC2;
+  --white: #FFFFFF;
+  --yellow: #FFD93D;
+  --pink: #FF8FB8;
+  --blue: #7CB7FF;
+  --mint: #7DE3A8;
+  --orange: #FFA94D;
+  --lilac: #C4A8FF;
+
+  /* Border & Radius */
+  --bw: 3px;
+  --border: var(--bw) solid var(--ink);
+  --r-sm: 8px;
+  --r-md: 16px;
+  --r-pill: 999px;
+  --r-blob: 255px 18px 225px 18px / 18px 225px 18px 255px;
+
+  /* Shadow */
+  --shadow-1: 4px 4px 0 var(--ink);
+  --shadow-2: 8px 8px 0 var(--ink);
+
+  /* Tilt Angles */
+  --tilt-a: -2deg;
+  --tilt-b: 1.5deg;
+  --tilt-c: -1deg;
+  --tilt-d: 2.5deg;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 72px;
+  --space-7: 120px;
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+  --dur-slow: 480ms;
+
+  /* Typography */
+  --font-display: "Bricolage Grotesque Variable", "Arial Black", sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+
+  --fs-hero: clamp(3rem, 9vw, 7.5rem);
+  --fs-h2: clamp(2.25rem, 6vw, 4.5rem);
+  --fs-h3: clamp(1.25rem, 2.5vw, 1.75rem);
+  --fs-body: clamp(1rem, 1.2vw, 1.125rem);
+  --fs-label: 0.8125rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --shadow-1: 3px 3px 0 var(--ink);
+    --shadow-2: 5px 5px 0 var(--ink);
+    --tilt-a: -1deg;
+    --tilt-b: 0.75deg;
+    --tilt-c: -0.5deg;
+    --tilt-d: 1deg;
+    --space-5: 28px;
+    --space-6: 48px;
+    --space-7: 72px;
+  }
+}
+

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="100%" fill="none">
+  <rect width="640" height="400" fill="#FFEFC2" />
+  <!-- Football Simulator Game React -->
+  <rect x="50" y="50" width="540" height="300" rx="16" fill="#FFFFFF" stroke="#111111" stroke-width="4" />
+  <rect x="50" y="50" width="540" height="50" rx="16" fill="#7DE3A8" stroke="#111111" stroke-width="4" />
+  <text x="80" y="81" font-family="'Space Mono', monospace" font-size="14" font-weight="bold" fill="#111111">REACT // FOOTBALL SIMULATOR STRATEGY GAME</text>
+
+  <!-- Green Pitch Grid -->
+  <rect x="90" y="130" width="280" height="180" rx="10" fill="#7DE3A8" stroke="#111111" stroke-width="3.5" />
+  <line x1="230" y1="130" x2="230" y2="310" stroke="#FFFFFF" stroke-width="3" />
+  <circle cx="230" cy="220" r="30" stroke="#FFFFFF" stroke-width="3" fill="none" />
+  <rect x="90" y="170" width="40" height="100" stroke="#FFFFFF" stroke-width="3" fill="none" />
+  <rect x="330" y="170" width="40" height="100" stroke="#FFFFFF" stroke-width="3" fill="none" />
+
+  <!-- Tactical Player Pins -->
+  <circle cx="130" cy="220" r="8" fill="#111111" />
+  <circle cx="170" cy="165" r="8" fill="#FF8FB8" stroke="#111111" stroke-width="2" />
+  <circle cx="170" cy="275" r="8" fill="#FF8FB8" stroke="#111111" stroke-width="2" />
+  <circle cx="280" cy="220" r="8" fill="#FFD93D" stroke="#111111" stroke-width="2" />
+
+  <!-- Soccer Ball & Trajectory -->
+  <path d="M 230 220 Q 260 170 310 190" stroke="#111111" stroke-width="3" stroke-dasharray="6 4" fill="none" />
+  <circle cx="310" cy="190" r="10" fill="#FFFFFF" stroke="#111111" stroke-width="2.5" />
+
+  <!-- Scoreboard -->
+  <rect x="400" y="140" width="160" height="100" rx="10" fill="#111111" stroke="#111111" stroke-width="3" />
+  <text x="420" y="170" font-family="'Space Mono', monospace" font-size="12" fill="#7DE3A8">LIVE MATCH</text>
+  <text x="425" y="215" font-family="'Bricolage Grotesque Variable', sans-serif" font-size="32" font-weight="bold" fill="#FFD93D">3 - 1</text>
+  <rect x="400" y="260" width="160" height="36" rx="8" fill="#FF8FB8" stroke="#111111" stroke-width="2.5" />
+  <text x="425" y="283" font-family="'Space Mono', monospace" font-size="11" font-weight="bold" fill="#111111">SIMULATE STEP</text>
+</svg>
+

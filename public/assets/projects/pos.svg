@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="100%" fill="none">
+  <rect width="640" height="400" fill="#FFF6DC" />
+  <!-- Cashier POS Mobile React Native -->
+  <rect x="50" y="50" width="540" height="300" rx="16" fill="#FFFFFF" stroke="#111111" stroke-width="4" />
+  <rect x="50" y="50" width="540" height="50" rx="16" fill="#FF8FB8" stroke="#111111" stroke-width="4" />
+  <text x="80" y="81" font-family="'Space Mono', monospace" font-size="14" font-weight="bold" fill="#111111">REACT NATIVE // APLIKASI KASIR POS MOBILE</text>
+
+  <!-- Mobile phone device frame -->
+  <rect x="120" y="125" width="130" height="200" rx="20" fill="#111111" stroke="#111111" stroke-width="3" />
+  <rect x="125" y="135" width="120" height="180" rx="14" fill="#FFFFFF" />
+  <!-- Phone screen content -->
+  <rect x="135" y="150" width="100" height="20" rx="4" fill="#FFD93D" stroke="#111111" stroke-width="2" />
+  <rect x="135" y="180" width="45" height="40" rx="4" fill="#7CB7FF" />
+  <rect x="190" y="180" width="45" height="40" rx="4" fill="#7DE3A8" />
+  <rect x="135" y="230" width="45" height="40" rx="4" fill="#FFA94D" />
+  <rect x="190" y="230" width="45" height="40" rx="4" fill="#C4A8FF" />
+  <rect x="135" y="280" width="100" height="25" rx="6" fill="#111111" />
+
+  <!-- Printed Receipt paper -->
+  <path d="M 330 130 L 480 130 L 480 290 L 465 280 L 450 290 L 435 280 L 420 290 L 405 280 L 390 290 L 375 280 L 360 290 L 345 280 L 330 290 Z" fill="#FFEFC2" stroke="#111111" stroke-width="3.5" />
+  <text x="360" y="160" font-family="'Space Mono', monospace" font-size="14" font-weight="bold" fill="#111111">POS STRUK</text>
+  <line x1="345" y1="175" x2="465" y2="175" stroke="#111111" stroke-width="2" stroke-dasharray="4 4" />
+  <text x="345" y="195" font-family="'Space Mono', monospace" font-size="10" fill="#111111">ITEM 1 ........... 25K</text>
+  <text x="345" y="215" font-family="'Space Mono', monospace" font-size="10" fill="#111111">ITEM 2 ........... 15K</text>
+  <text x="345" y="235" font-family="'Space Mono', monospace" font-size="10" fill="#111111">TAX (10%) ........ 4K</text>
+  <line x1="345" y1="245" x2="465" y2="245" stroke="#111111" stroke-width="2" />
+  <text x="345" y="265" font-family="'Space Mono', monospace" font-size="12" font-weight="bold" fill="#111111">TOTAL: 44.000</text>
+</svg>
+
