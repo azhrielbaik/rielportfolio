@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { useLockBodyScroll } from "../../hooks/useLockBodyScroll";
 import { Button } from "../ui/Button";
 import { Icon } from "../ui/Icon";
@@ -53,7 +54,7 @@ export function CertificateModal({ certificate, onClose }) {
 
   if (!certificate) return null;
 
-  return (
+  return createPortal(
     <div
       className="cert-modal-backdrop"
       onClick={(e) => {
@@ -62,7 +63,7 @@ export function CertificateModal({ certificate, onClose }) {
       role="presentation"
     >
       <div
-        className="cert-modal-panel card"
+        className="cert-modal-panel"
         ref={modalRef}
         role="dialog"
         aria-modal="true"
@@ -90,40 +91,42 @@ export function CertificateModal({ certificate, onClose }) {
           </button>
         </div>
 
-        {/* Certificate Large Preview */}
-        <div className="cert-modal__image-wrapper">
-          <img
-            src={certificate.image}
-            alt={`Pratinjau sertifikat ${certificate.title}`}
-            width="600"
-            height="420"
-            className="cert-modal__img"
-          />
-        </div>
+        {/* Modal Scrollable Body */}
+        <div className="cert-modal__body">
+          {/* Certificate Large Preview */}
+          <div className="cert-modal__image-wrapper">
+            <img
+              src={certificate.image}
+              alt={`Pratinjau sertifikat ${certificate.title}`}
+              className="cert-modal__img"
+            />
+          </div>
 
-        {/* Caption & Metadata */}
-        <div className="cert-modal__footer">
-          <h3 id="cert-modal-title" className="cert-modal__title">
-            {certificate.title}
-          </h3>
-          <p className="cert-modal__issuer mono-label">
-            Penyelenggara: {certificate.issuer}
-          </p>
-          <p className="cert-modal__desc">
-            {certificate.description}
-          </p>
-          <div className="cert-modal__action">
-            <Button
-              variant="primary"
-              size="sm"
-              onClick={onClose}
-            >
-              <span>Tutup Pratinjau</span>
-            </Button>
+          {/* Caption & Metadata */}
+          <div className="cert-modal__footer">
+            <h3 id="cert-modal-title" className="cert-modal__title">
+              {certificate.title}
+            </h3>
+            <p className="cert-modal__issuer mono-label">
+              Penyelenggara: {certificate.issuer}
+            </p>
+            <p className="cert-modal__desc">
+              {certificate.description}
+            </p>
+            <div className="cert-modal__action">
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={onClose}
+              >
+                <span>Tutup Pratinjau</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
 
