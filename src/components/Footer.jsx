@@ -61,9 +61,6 @@ export function Footer() {
           <p className="footer-copyright mono-label">
             &copy; 2026 Mohammad Azhriel Muari Fullah. All rights reserved.
           </p>
-          <p className="footer-tech-stack mono-label">
-            Built with React &bull; Native CSS &bull; Neo-Brutalism System
-          </p>
         </div>
       </div>
     </footer>
