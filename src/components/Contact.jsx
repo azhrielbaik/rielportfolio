@@ -59,12 +59,12 @@ export function Contact() {
       const appScriptUrl = import.meta.env.VITE_CONTACT_ENDPOINT || "";
       
       if (appScriptUrl) {
-        const response = await fetch(appScriptUrl, {
+        await fetch(appScriptUrl, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify(formData)
         });
-        if (!response.ok) throw new Error("Network error");
       } else {
         // Fallback simulated success for preview / dev
         await new Promise((resolve) => setTimeout(resolve, 1000));
